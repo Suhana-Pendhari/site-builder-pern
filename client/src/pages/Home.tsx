@@ -1,9 +1,13 @@
-import React from 'react'
+
+import Footer from "../components/Footer"
+
 
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
+    return (
+        <div className="min-h-screen overflow-hidden bg-[#050706] text-white">
+            <Footer />
+        </div>
+    )
 }
 
 export default Home
