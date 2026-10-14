@@ -1,4 +1,3 @@
-import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Pricing from './pages/Pricing'
@@ -7,6 +6,7 @@ import Projects from './pages/Projects'
 import View from './pages/View'
 import Community from './pages/Community'
 import Preview from './pages/Preview'
+import Builder from './pages/Builder'
 
 const App = () => {
   return (
@@ -17,6 +17,8 @@ const App = () => {
         <Route path='/pricing' element={<Pricing />} />
         <Route path='/projects/:projectId' element={<Projects />} />
         <Route path='/projects' element={<MyProjects />} />
+        <Route path='/projects/new' element={<Builder />} />
+        <Route path='/builder/:projectId' element={<Builder />} />
         <Route path='/preview/:projectId' element={<Preview />} />
         <Route path='/preview/:projectId/:versionId' element={<Preview />} />
         <Route path='/community' element={<Community />} />
